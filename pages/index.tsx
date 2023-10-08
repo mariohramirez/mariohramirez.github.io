@@ -19,8 +19,9 @@ const Index = () => {
             <Image src={profilePic} alt="Profile pic" className="rounded-full  w-[450px] h-[450px] mx-[120px]" />
           </div>
           <div className="w-1/2 flex flex-col items-center self-center mx-[4px]">
-          <AnimatedText text="Hi, I'm Mario Ramirez, Software Engineering Student" className="!text-6xl !text-left" />
+          <AnimatedText text="Hi, I&apos;m Mario Ramirez, Software Engineering Student" className="!text-6xl !text-left" />
             <p className="my-4 text-base font-medium text-justify">
+            My name is Mario Ramirez, I am a Software Engineering student at the Universidad de Antioquia in Medellín, Colombia. I'm a lifelong learner, always searching for something new to learn and to try, not only in my professional medium, but also in other topics that leans towards my own expression.  
             </p>
             <div className="flex items-center self-start mt-2">
               <Link href="/CV-Resume.pdf" target={'_blank'} 
