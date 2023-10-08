@@ -18,7 +18,10 @@ const Index = () => {
           <div className="w-1/2">
             <Image src={profilePic} alt="Profile pic" className="rounded-full  w-[450px] h-[450px] mx-[120px]" />
           </div>
+          <div className="w-1/2 flex flex-col items-center self-center mx-[4px]">
+          <AnimatedText text="Hi, I&apos;m Mario Ramirez, Software Engineering Student" className="!text-6xl !text-left" />
 
+          </div>
         </div>
         <Layout />
       </main>
