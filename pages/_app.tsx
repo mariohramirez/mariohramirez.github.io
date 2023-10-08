@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app'
 import { Montserrat } from "next/font/google"
 import Head from 'next/head';
 import { Navbar } from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
 
 //Cargamos la fuente con la variable --font-mont para definir el nombre de la variable CSS
 const montserrat = Montserrat({
@@ -24,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <main className={"${montserrat.variable} font-mont bg-light w-full min-h-screen"}>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </main>
     </>
   );

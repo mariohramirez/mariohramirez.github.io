@@ -2,7 +2,6 @@ import React, { SVGProps } from 'react';
 
 interface IconProps extends SVGProps<SVGSVGElement> {
   className?: string;
-  // You can add other specific prop types here if needed.
 }
 
 export const TwitterIcon: React.FC<IconProps> = ({ className, ...rest }) => (
