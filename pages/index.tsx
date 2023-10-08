@@ -15,10 +15,8 @@ const Index = () => {
       <main className=" items-center text-dark w-full min-h-screen">
         <Layout className="pt-o" />
         <div className="flex items-center justify-between w-full">
-          <div className="w-1/2">
-            <Image src={profilePic} alt="Profile pic" className="rounded-full  w-[450px] h-[450px] mx-[120px]" />
-          </div>
-          <div className="w-1/2 flex flex-col items-center self-center mx-[4px]">
+
+          <div className="w-1/2 flex flex-col items-center self-center ml-[120px]">
             <AnimatedText text="Hi, I&apos;m Mario Ramirez, Software Engineering Student" className="!text-6xl !text-left" />
             <p className="my-4 text-base font-medium text-justify">
               My name is Mario Ramirez, I am a Software Engineering student at the Universidad de Antioquia 
@@ -34,6 +32,9 @@ const Index = () => {
               <Link href="mailto:marioh.ramirez@udea.edu.co" target={"_blank"}
                 className="ml-4 text-lg font-medium capitalize text-dark underline">Contact me</Link>
             </div>
+          </div>
+          <div className="w-1/2">
+            <Image src={profilePic} alt="Profile pic" className="rounded-full  w-[450px] h-[450px] mx-[120px]" />
           </div>
         </div>
         <Layout />
