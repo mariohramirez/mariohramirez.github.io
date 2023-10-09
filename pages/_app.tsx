@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       {/*amos la variable montserrat.variable para usar la variable CSS en nuestro documento HTML
       Luego usamos bg-light que es uno de los colores definidos en el tailwind.config.ts*/}
-      <main className={"${montserrat.variable} font-mont bg-light w-full min-h-screen"}>
+      <main className={"${montserrat.variable} font-mont w-full min-h-screen bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-revolver via-grape to-purple-900"}>
         <Navbar />
         <Component {...pageProps} />
         <Footer />

@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const Layout = ({ children, className=""}: LayoutProps) => {
     return (
-        <div className={`w-full h-full inline-block z-0 bg-white ${className}`}>
+        <div className={`w-full h-full inline-block z-0 ${className}`}>
             {children}
         </div>
     );
