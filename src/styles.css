@@ -2,3 +2,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Habilitar scroll suave en todo el documento */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Contenedor principal con scroll suave */
+.smooth-scroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Para dispositivos iOS */
+  overscroll-behavior: contain; /* Evita efectos de rebote */
+}
+
+/* Ocultar scrollbar pero mantener funcionalidad */
+.smooth-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.smooth-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Asegurar transiciones suaves */
+body, main, div[class^="min-h-screen"] {
+  will-change: transform;
+}
+
+@font-face {
+    font-family: "bebasneue";
+    src: url("/fonts/BebasNeue-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
