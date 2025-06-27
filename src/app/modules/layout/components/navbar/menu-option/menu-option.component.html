@@ -1,0 +1,21 @@
+    <a [href]="link" class="group">
+      <div class="flex">
+        @for (char of chars; track $index; let i = $index) {
+          <div class="relative overflow-hidden">
+            <!-- Span original (color inicial) -->
+            <span 
+              class="block transition-all duration-500 group-hover:-translate-y-full"
+              [class]="getDelayClass(i)"
+              [style.color]="textColor"
+              >{{ char }}</span>
+            
+            <!-- Span que aparece (color final) -->
+            <span 
+              class="block absolute top-full transition-all duration-500 group-hover:-translate-y-full"
+              [class]="getDelayClass(i)"
+              [style.color]="hoverColor"
+              >{{ char }}</span>
+          </div>
+        }
+      </div>
+    </a>
